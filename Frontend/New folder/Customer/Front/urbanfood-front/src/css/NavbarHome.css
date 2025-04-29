@@ -1,0 +1,96 @@
+.bg-body-tertiary {
+    background-color: rgb(255, 255, 255) !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 10px 0;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+}
+
+/* Ensure content is properly aligned */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+/* Navbar Brand (Logo) */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 50px; /* Increased space between brand image and nav links */
+}
+
+.navbar-logo {
+    height: 60px; /* Adjust size */
+    width: auto;
+}
+
+/* Nav Container - Aligning to left */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Moves nav tabs closer to the left */
+}
+
+/* Nav Links */
+.nav-link {
+    color: rgb(84, 71, 26) !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect - Underline from center */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #569863;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: #569863 !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 50%;
+}
+
+/* Login Button - Aligning to right */
+.nav-right {
+    margin-left: auto;
+}
+
+.login-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #104a27;
+    border: none;
+    color: rgb(212, 238, 221);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #446c48;
+}
