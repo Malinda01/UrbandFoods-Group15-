@@ -1,0 +1,69 @@
+.content-wrapper {
+  background-color: #007bff;
+}
+
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d343a;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.btn-custom {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.card-custom {
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center; /* Center-align card content */
+}
+
+.card-title-custom {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.content-wrapper {
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust spacing to fit footer */
+}
+
+.footer-custom {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  text-align: center; /* Center-align footer content */
+  padding: 1rem 0;
+  position: relative; /* Changed from fixed to relative */
+  bottom: 0;
+  width: 100%;
+  margin-top: auto; /* Ensure it stays at the bottom of the content */
+}
+
+.footer-custom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.footer-link {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.background-image {
+  background: none; /* Removed background image */
+  min-height: 100vh; /* Ensure it still covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
