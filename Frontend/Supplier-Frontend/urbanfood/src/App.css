@@ -1,0 +1,123 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #32c254;
+  height: 80px; /* Increase the height of the header */
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: #e9ecef !important;
+}
+
+.footer {
+  background-color: #28a745;
+}
+
+footer p {
+  margin: 0;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card-title {
+  color: #28a745;
+}
+
+.card-footer {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success {
+  margin: 7px;
+}
+
+.navbar navbar-expand-lg{
+  background-color: #28a745;
+}
+
+.app-background {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.app-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(90, 90, 90, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
+}
+
+.app-background > * {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.products-title {
+  font-size: 3rem; /* Increase font size for emphasis */
+  font-weight: bold; /* Make it bold */
+  color: #000000; /* Set the title color to black */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a stronger shadow for depth */
+  text-transform: uppercase; /* Make the text uppercase for prominence */
+  letter-spacing: 1.5px; /* Add spacing between letters for a modern look */
+  margin: 0; /* Remove default margin */
+  border-bottom: 4px solid #000000; /* Add a black underline for separation */
+  padding-bottom: 10px; /* Add padding below the text */
+}
+
+.custom-add-button {
+  background-color: #28a745; /* Green background */
+  border: none; /* Remove border */
+  font-size: 1.2rem; /* Increase font size */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Add hover effect */
+}
+
+.custom-add-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.custom-refresh-button {
+  background-color: #6c757d; /* Gray background */
+  border: none; /* Remove border */
+  font-size: 1.2rem; /* Increase font size */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Add hover effect */
+}
+
+.custom-refresh-button:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
