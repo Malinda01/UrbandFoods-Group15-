@@ -1,0 +1,95 @@
+.home-body-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #f9fdd1;
+    padding: 20px;
+}
+
+.home-text {
+    text-align: center;
+    max-width: 1200px;
+}
+.highlight {
+    color: #ff9800;
+    font-weight: bold;
+  }
+
+.home-text h2 {
+    font-size: 2rem;
+    color: #129d0f;
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    font-size: 1.1rem;
+    color: #043118;
+}
+
+/* Features Grid */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Feature Card */
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 22%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Image */
+.feature-image {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+/* Feature Text */
+.feature h3 {
+    font-size: 1.2rem;
+    color: #359037;
+    margin-bottom: 10px;
+    text-align:left ;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+    text-align:left ;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .features {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+    }
+}

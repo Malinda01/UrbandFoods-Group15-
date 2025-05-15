@@ -1,0 +1,103 @@
+.order-history {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 20px;
+  padding: 20px;
+  font-size: 18px;
+  background-image: url('../assets/profileback.jpg');
+  background-size: cover; /* Make sure the background covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  min-height: 100vh; /* Ensure it takes up the full screen height */
+}
+
+.order-card {
+  border: 1px solid #5f5b5b;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(140, 142, 121, 0.5);
+  background-color: #f6fff2;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items inside the card */
+}
+
+.order-card button {
+  background-color: #06460ae5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+.order-card button:hover {
+  color: rgb(255, 255, 255);
+  background-color: #767b36;
+}
+
+
+.order-card:hover {
+  transform: scale(1.01);
+}
+
+.order-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 3px;
+}
+
+.order-card p {
+  margin-bottom: 2px;
+}
+.review-form {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.review-form h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.product-review {
+  margin-bottom: 15px;
+}
+
+.star {
+  font-size: 1.5em;
+  color: #ccc; /* Default color */
+  cursor: pointer;
+  border: none;
+  background: none; /* Ensure no background for the stars */
+}
+
+.star.selected {
+  color: #ffd700; /* Only selected stars are yellow */
+}
+
+.review-form button {
+  padding: 10px 20px;
+  background-color: #104a27; /* Dark green for the submit button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-end; /* Align the submit button to the right */
+}
+
+.review-form button:hover {
+  background-color: #ff7f00; /* Orange hover effect */
+}
+
+/* Align the submit review button to the right in the product review */
+.product-review button {
+  margin-top: 10px; /* Optional: Add some space at the top */
+  align-self: flex-end; /* Align right */
+}

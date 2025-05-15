@@ -1,0 +1,70 @@
+.edit-profile-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('../assets/profileback.jpg');
+  background-size:cover;
+
+}
+
+  
+  .edit-profile-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .edit-profile-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .edit-profile-form button {
+    margin-top: 25px;
+    padding: 14px;
+    background: linear-gradient(120deg, #075518, #6c5208);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .form-wrapper button:hover {
+    background: linear-gradient(130deg, #b89714, #44c740);
+    transform: translateY(-2px);
+  }
+
+  
+  .edit-profile-form button:hover {
+    background: linear-gradient(130deg, #b89714, #44c740);
+    transform: translateY(-2px);
+  }
+  
+  .edit-profile-form button + button {
+    margin-left: 10px;
+    background-color: #ccc;
+    color: #ffffff;
+  }
+  
+  .form-wrapper {
+    background: rgba(228, 255, 217, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  

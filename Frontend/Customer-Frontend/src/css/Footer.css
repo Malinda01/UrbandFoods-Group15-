@@ -1,0 +1,109 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Top Section - Evenly spaced sections */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: stretch;
+}
+
+/* Left - Logo */
+.footer-left img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+/* Center Left - Address */
+.footer-center {
+    text-align: left;
+    flex: 1;
+    margin-left: 100px;
+}
+
+/* Center Right - Links */
+.footer-links {
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Right - Login & Sign Up */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.btn1 {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 120px;
+    margin: 5px 0;
+    text-align: center;
+    background-color: #ff9800;
+    color: rgb(212, 238, 221);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn1:hover {
+    background-color: #ff5722;
+}
+.signup-btn1:hover {
+    background-color: #ff5722;
+   
+}
+
+/* Bottom Section - Full width, centered */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+    width: 100%;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-links, .footer-right {
+        margin: 10px 0;
+    }
+}
